@@ -26,6 +26,6 @@ hs_err_pid*
 .gradle/
 *.iml
 gradle*
-build*
+build/
 settings.gradle
 out/*
