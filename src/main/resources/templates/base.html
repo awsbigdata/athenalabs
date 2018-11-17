@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Default title for my pages</title>
+    <link rel="stylesheet" th:href="@{css/align.css}" type="text/css"/>
+
+</head>
+<body>
+<div class="container">
+
+
+    <div id="header" layout:fragment="header">Header</div>
+    <div id="sidebar-left">
+        <div class="sidenav">
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#clients">Clients</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+    <div id="main" layout:fragment="content">Main</div>
+    <div id="footer" layout:fragment="footer">Footer</div>
+
+    </div>
+
+<th:block layout:fragment="scripts"></th:block>
+</body>
+</html>
